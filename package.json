@@ -1,0 +1,5 @@
+{
+  "scripts": { 
+    "tail-debug": "npx tailwindcss build styles.css -o tailwind.css" 
+   }
+} 

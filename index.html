@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Комбинатор Про - современный генератор юридических документов</title>
+    <link href="tailwind.css" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="favicon16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="favicon32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="favicon128.png" sizes="128x128">
+
+    <style>
+        .bg-line {
+            background-image: url("data:image/svg+xml,%3Csvg width='22' height='16' viewBox='0 0 22 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M22 0H0V16H5C5 12.6863 7.68628 10 11 10C14.3137 10 17 12.6863 17 16H22V0Z' fill='%237E0072'/%3E%3C/svg%3E%0A");
+        }
+    </style>
+</head>
+
+<body>
+    <!--top triangle-->
+    <div class="">
+        <svg class="w-1/3" viewBox="0 0 622 85" fill="none">
+            <path d="M0 85V0H622L0 85Z" fill="#7E0072" />
+        </svg>
+    </div>
+
+    <!-- menu -->
+    <div class="p-5 md:sticky z-50 md:top-0 bg-white bg-opacity-90">
+        <div class="container mx-auto flex flex-col items-center md:flex-row">
+            <svg class="w-48 md:w-64" viewBox="0 0 275 61" fill="none">
+                <path
+                    d="M25.1348 46.6543L45.2629 22.8133C53.9344 12.5422 36.5935 -1.9078 28.0158 8.25218L1.72601 39.3325L1.72602 10.0787C1.72602 3.18966 13.4467 2.92334 13.4467 10.0787V16.8673M25.1348 46.6543L16.6058 56.7566C10.1727 64.3764 -2.6922 53.1196 3.54602 45.7307L27.9143 16.8673C33.7627 9.94004 42.6114 17.0152 36.568 24.1734L20.5122 42.6958C20.5122 42.6958 22.4312 44.3409 25.1348 46.6543ZM25.1348 46.6543C29.0233 49.9815 34.5348 54.6912 38.2947 57.8774C44.6689 63.2789 51.5117 52.1151 45.5711 47.7537C39.6304 43.3923 37.7147 41.7427 37.7147 41.7427"
+                    stroke="#7E0072" stroke-width="3.00316" stroke-linecap="round" stroke-linejoin="round" />
+                <rect x="236.708" y="1.05561" width="37.5645" height="17.4625" rx="3.5373" stroke="#7E0072"
+                    stroke-width="0.544199" />
+                <path
+                    d="M242.82 14C242.644 14 242.497 13.9401 242.377 13.8204C242.257 13.7007 242.197 13.553 242.197 13.3774V5.27213C242.197 5.08855 242.257 4.94089 242.377 4.82915C242.497 4.70943 242.644 4.64957 242.82 4.64957L249.189 4.64957C249.373 4.64957 249.52 4.70943 249.632 4.82915C249.752 4.94089 249.812 5.08855 249.812 5.27213V13.3774C249.812 13.553 249.752 13.7007 249.632 13.8204C249.52 13.9401 249.373 14 249.189 14C249.014 14 248.866 13.9401 248.746 13.8204C248.626 13.7007 248.567 13.553 248.567 13.3774V5.75103L243.442 5.75103V13.3774C243.442 13.553 243.383 13.7007 243.263 13.8204C243.151 13.9401 243.003 14 242.82 14ZM252.828 14C252.652 14 252.505 13.9401 252.385 13.8204C252.265 13.7007 252.205 13.553 252.205 13.3774V5.27213C252.205 5.08855 252.265 4.94089 252.385 4.82915C252.505 4.70943 252.652 4.64957 252.828 4.64957L255.222 4.64957C255.821 4.64957 256.352 4.78126 256.815 5.04466C257.278 5.30805 257.637 5.6752 257.892 6.14611C258.156 6.60905 258.287 7.14381 258.287 7.75041C258.287 8.33307 258.156 8.85187 257.892 9.30682C257.637 9.76178 257.278 10.117 256.815 10.3724C256.352 10.6278 255.821 10.7555 255.222 10.7555L253.451 10.7555V13.3774C253.451 13.553 253.391 13.7007 253.271 13.8204C253.159 13.9401 253.012 14 252.828 14ZM253.451 9.60613L255.222 9.60613C255.765 9.60613 256.212 9.43453 256.563 9.09132C256.915 8.74013 257.09 8.29316 257.09 7.75041C257.09 7.3673 257.01 7.03207 256.851 6.74473C256.691 6.44942 256.472 6.21795 256.192 6.05034C255.913 5.88272 255.59 5.79892 255.222 5.79892H253.451V9.60613ZM263.987 14.1197C263.284 14.1197 262.642 14.004 262.059 13.7725C261.477 13.5331 260.974 13.2018 260.551 12.7788C260.136 12.3478 259.812 11.841 259.581 11.2583C259.349 10.6677 259.234 10.0212 259.234 9.3188C259.234 8.61642 259.349 7.9739 259.581 7.39124C259.812 6.80859 260.136 6.30575 260.551 5.88272C260.974 5.45172 261.477 5.12048 262.059 4.88901C262.642 4.64957 263.284 4.52984 263.987 4.52984C264.689 4.52984 265.328 4.64957 265.902 4.88901C266.485 5.12048 266.988 5.45172 267.411 5.88272C267.834 6.30575 268.161 6.80859 268.393 7.39124C268.624 7.9739 268.74 8.61642 268.74 9.3188C268.74 10.0212 268.624 10.6677 268.393 11.2583C268.161 11.841 267.834 12.3478 267.411 12.7788C266.988 13.2018 266.485 13.5331 265.902 13.7725C265.328 14.004 264.689 14.1197 263.987 14.1197ZM263.987 12.9943C264.681 12.9943 265.296 12.8347 265.831 12.5154C266.365 12.1882 266.784 11.7492 267.088 11.1985C267.391 10.6398 267.543 10.0132 267.543 9.3188C267.543 8.6244 267.391 8.00183 267.088 7.4511C266.784 6.89239 266.365 6.45341 265.831 6.13414C265.296 5.81488 264.681 5.65525 263.987 5.65525C263.292 5.65525 262.678 5.81488 262.143 6.13414C261.608 6.45341 261.189 6.89239 260.886 7.4511C260.583 8.00183 260.431 8.6244 260.431 9.3188C260.431 10.0132 260.583 10.6398 260.886 11.1985C261.189 11.7492 261.608 12.1882 262.143 12.5154C262.678 12.8347 263.292 12.9943 263.987 12.9943Z"
+                    fill="#7E0072" />
+                <path
+                    d="M62.5611 42.0514C61.046 42.0514 59.6529 41.7902 58.3816 41.2677C57.1104 40.7453 56.0045 40.0139 55.0642 39.0735C54.1412 38.1331 53.4185 37.0273 52.8961 35.7561C52.3911 34.4848 52.1385 33.0917 52.1385 31.5766C52.1385 30.079 52.3911 28.6945 52.8961 27.4233C53.4185 26.152 54.1412 25.0462 55.0642 24.1059C56.0045 23.1655 57.1104 22.4341 58.3816 21.9116C59.6529 21.3892 61.046 21.128 62.5611 21.128C64.0587 21.128 65.4431 21.3892 66.7144 21.9116C67.9856 22.4341 69.0914 23.1655 70.0318 24.1059C70.9722 25.0462 71.6949 26.152 72.1999 27.4233C72.7223 28.6945 72.9836 30.079 72.9836 31.5766C72.9836 33.0917 72.7223 34.4848 72.1999 35.7561C71.6949 37.0273 70.9722 38.1331 70.0318 39.0735C69.0914 40.0139 67.9856 40.7453 66.7144 41.2677C65.4431 41.7902 64.0587 42.0514 62.5611 42.0514ZM62.5611 40.1184C63.7626 40.1184 64.8772 39.9094 65.9046 39.4915C66.9321 39.0561 67.8202 38.4553 68.569 37.6891C69.3352 36.9054 69.9273 35.9999 70.3453 34.9724C70.7632 33.9276 70.9722 32.7956 70.9722 31.5766C70.9722 30.375 70.7632 29.2605 70.3453 28.2331C69.9273 27.1882 69.3352 26.2827 68.569 25.5164C67.8202 24.7328 66.9321 24.132 65.9046 23.714C64.8772 23.2787 63.7626 23.061 62.5611 23.061C61.342 23.061 60.2188 23.2787 59.1914 23.714C58.1639 24.132 57.2671 24.7328 56.5009 25.5164C55.752 26.2827 55.1687 27.1882 54.7507 28.2331C54.3328 29.2605 54.1238 30.375 54.1238 31.5766C54.1238 32.7956 54.3328 33.9276 54.7507 34.9724C55.1687 35.9999 55.752 36.9054 56.5009 37.6891C57.2671 38.4553 58.1639 39.0561 59.1914 39.4915C60.2188 39.9094 61.342 40.1184 62.5611 40.1184ZM78.2052 41.7902C77.9266 41.7902 77.6828 41.6944 77.4738 41.5028C77.2823 41.2939 77.1865 41.05 77.1865 40.7714V22.408C77.1865 22.1119 77.2823 21.8681 77.4738 21.6766C77.6828 21.485 77.9266 21.3892 78.2052 21.3892C78.6232 21.3892 78.9279 21.5634 79.1195 21.9116L87.4784 38.525L95.6806 21.9116C95.8895 21.5634 96.1943 21.3892 96.5948 21.3892C96.8734 21.3892 97.1085 21.485 97.3001 21.6766C97.4916 21.8681 97.5874 22.1119 97.5874 22.408V40.7714C97.5874 41.05 97.4916 41.2939 97.3001 41.5028C97.1085 41.6944 96.8734 41.7902 96.5948 41.7902C96.2988 41.7902 96.0463 41.6944 95.8373 41.5028C95.6457 41.2939 95.5499 41.05 95.5499 40.7714V25.9866L88.2881 40.8237C88.0966 41.1545 87.8005 41.32 87.4 41.32C86.9647 41.32 86.6512 41.111 86.4596 40.6931L79.224 26.2217V40.7714C79.224 41.05 79.1195 41.2939 78.9105 41.5028C78.7189 41.6944 78.4839 41.7902 78.2052 41.7902ZM103.973 41.7902C103.642 41.7902 103.363 41.7031 103.137 41.5289C102.928 41.3374 102.823 41.0849 102.823 40.7714V22.408C102.823 22.1119 102.919 21.8681 103.111 21.6766C103.302 21.485 103.546 21.3892 103.842 21.3892H114.97C115.231 21.3892 115.449 21.485 115.623 21.6766C115.814 21.8507 115.91 22.0858 115.91 22.3818C115.91 22.6779 115.814 22.913 115.623 23.0871C115.449 23.2613 115.231 23.3483 114.97 23.3483H104.861V29.7481H111.313C112.532 29.7481 113.612 30.0093 114.552 30.5318C115.51 31.0368 116.259 31.7421 116.798 32.6476C117.338 33.5357 117.608 34.5632 117.608 35.73C117.608 36.9141 117.338 37.9677 116.798 38.8907C116.259 39.7962 115.51 40.5102 114.552 41.0326C113.612 41.5377 112.532 41.7902 111.313 41.7902H103.973ZM104.861 39.831H111.313C112.567 39.831 113.594 39.4479 114.395 38.6817C115.196 37.9155 115.597 36.9054 115.597 35.6516C115.597 34.3978 115.196 33.4051 114.395 32.6737C113.594 31.9249 112.567 31.5505 111.313 31.5505H104.861V39.831ZM122.694 41.7902C122.415 41.7902 122.172 41.6944 121.963 41.5028C121.754 41.3113 121.649 41.0675 121.649 40.7714V22.408C121.649 22.1119 121.754 21.8681 121.963 21.6766C122.172 21.485 122.415 21.3892 122.694 21.3892C122.99 21.3892 123.225 21.485 123.399 21.6766C123.591 21.8681 123.687 22.1119 123.687 22.408V38.4466L136.721 21.7549C136.913 21.5111 137.174 21.3892 137.505 21.3892C137.801 21.3892 138.045 21.485 138.236 21.6766C138.428 21.8681 138.524 22.1119 138.524 22.408V40.7714C138.524 41.0675 138.428 41.3113 138.236 41.5028C138.045 41.6944 137.801 41.7902 137.505 41.7902C137.209 41.7902 136.965 41.6944 136.774 41.5028C136.582 41.3113 136.486 41.0675 136.486 40.7714V24.7589L123.452 41.4506C123.278 41.677 123.025 41.7902 122.694 41.7902ZM144.759 41.7902C144.463 41.7902 144.219 41.6944 144.028 41.5028C143.836 41.3113 143.74 41.0675 143.74 40.7714V22.408C143.74 22.1119 143.836 21.8681 144.028 21.6766C144.219 21.485 144.463 21.3892 144.759 21.3892C145.055 21.3892 145.299 21.485 145.491 21.6766C145.682 21.8681 145.778 22.1119 145.778 22.408V30.5579H158.525V22.408C158.525 22.1119 158.621 21.8681 158.813 21.6766C159.004 21.485 159.248 21.3892 159.544 21.3892C159.84 21.3892 160.084 21.485 160.275 21.6766C160.467 21.8681 160.563 22.1119 160.563 22.408V40.7714C160.563 41.0675 160.467 41.3113 160.275 41.5028C160.084 41.6944 159.84 41.7902 159.544 41.7902C159.248 41.7902 159.004 41.6944 158.813 41.5028C158.621 41.3113 158.525 41.0675 158.525 40.7714V32.3864H145.778V40.7714C145.778 41.0675 145.682 41.3113 145.491 41.5028C145.299 41.6944 145.055 41.7902 144.759 41.7902ZM164.657 41.7902C164.257 41.7902 163.969 41.6247 163.795 41.2939C163.621 40.963 163.604 40.6408 163.743 40.3274L171.423 22.0945C171.614 21.6243 171.945 21.3892 172.415 21.3892C172.868 21.3892 173.19 21.6243 173.382 22.0945L181.088 40.3535C181.244 40.6843 181.218 41.0065 181.009 41.32C180.818 41.6334 180.539 41.7902 180.173 41.7902C179.703 41.7902 179.381 41.5812 179.207 41.1632L177.483 36.9315H167.348L165.598 41.1632C165.511 41.3722 165.38 41.5289 165.206 41.6334C165.049 41.7379 164.866 41.7902 164.657 41.7902ZM168.079 35.1814H176.751L172.415 24.7067L168.079 35.1814ZM187.985 41.7902C187.706 41.7902 187.463 41.6944 187.254 41.5028C187.062 41.2939 186.966 41.05 186.966 40.7714V23.2438H180.775C180.497 23.2438 180.27 23.1568 180.096 22.9826C179.922 22.8085 179.835 22.5908 179.835 22.3296C179.835 22.051 179.922 21.8246 180.096 21.6504C180.27 21.4763 180.497 21.3892 180.775 21.3892H195.221C195.499 21.3892 195.726 21.4763 195.9 21.6504C196.074 21.8246 196.161 22.051 196.161 22.3296C196.161 22.5908 196.074 22.8085 195.9 22.9826C195.726 23.1568 195.499 23.2438 195.221 23.2438H189.004V40.7714C189.004 41.05 188.908 41.2939 188.716 41.5028C188.525 41.6944 188.281 41.7902 187.985 41.7902ZM207.301 42.0514C205.786 42.0514 204.393 41.7902 203.122 41.2677C201.85 40.7453 200.745 40.0139 199.804 39.0735C198.881 38.1331 198.159 37.0273 197.636 35.7561C197.131 34.4848 196.879 33.0917 196.879 31.5766C196.879 30.079 197.131 28.6945 197.636 27.4233C198.159 26.152 198.881 25.0462 199.804 24.1059C200.745 23.1655 201.85 22.4341 203.122 21.9116C204.393 21.3892 205.786 21.128 207.301 21.128C208.799 21.128 210.183 21.3892 211.454 21.9116C212.726 22.4341 213.831 23.1655 214.772 24.1059C215.712 25.0462 216.435 26.152 216.94 27.4233C217.462 28.6945 217.724 30.079 217.724 31.5766C217.724 33.0917 217.462 34.4848 216.94 35.7561C216.435 37.0273 215.712 38.1331 214.772 39.0735C213.831 40.0139 212.726 40.7453 211.454 41.2677C210.183 41.7902 208.799 42.0514 207.301 42.0514ZM207.301 40.1184C208.503 40.1184 209.617 39.9094 210.645 39.4915C211.672 39.0561 212.56 38.4553 213.309 37.6891C214.075 36.9054 214.667 35.9999 215.085 34.9724C215.503 33.9276 215.712 32.7956 215.712 31.5766C215.712 30.375 215.503 29.2605 215.085 28.2331C214.667 27.1882 214.075 26.2827 213.309 25.5164C212.56 24.7328 211.672 24.132 210.645 23.714C209.617 23.2787 208.503 23.061 207.301 23.061C206.082 23.061 204.959 23.2787 203.931 23.714C202.904 24.132 202.007 24.7328 201.241 25.5164C200.492 26.2827 199.909 27.1882 199.491 28.2331C199.073 29.2605 198.864 30.375 198.864 31.5766C198.864 32.7956 199.073 33.9276 199.491 34.9724C199.909 35.9999 200.492 36.9054 201.241 37.6891C202.007 38.4553 202.904 39.0561 203.931 39.4915C204.959 39.9094 206.082 40.1184 207.301 40.1184ZM222.945 41.7902C222.649 41.7902 222.405 41.6944 222.214 41.5028C222.022 41.3113 221.927 41.0675 221.927 40.7714V22.408C221.927 22.1119 222.022 21.8681 222.214 21.6766C222.405 21.485 222.649 21.3892 222.945 21.3892H228.17C229.458 21.3892 230.599 21.6766 231.591 22.2512C232.584 22.8085 233.359 23.5834 233.916 24.576C234.474 25.5687 234.752 26.718 234.752 28.0241C234.752 29.2953 234.474 30.4273 233.916 31.4199C233.359 32.3951 232.584 33.17 231.591 33.7447C230.599 34.302 229.458 34.5806 228.17 34.5806H223.964V40.7714C223.964 41.0675 223.868 41.3113 223.677 41.5028C223.485 41.6944 223.241 41.7902 222.945 41.7902ZM223.964 32.6215H228.17C229.058 32.6215 229.85 32.4299 230.547 32.0468C231.243 31.6463 231.783 31.0977 232.166 30.4012C232.567 29.7046 232.767 28.9122 232.767 28.0241C232.767 27.1011 232.567 26.2914 232.166 25.5948C231.783 24.8982 231.243 24.3497 230.547 23.9491C229.85 23.5486 229.058 23.3483 228.17 23.3483H223.964V32.6215Z"
+                    fill="black" />
+            </svg>
+            <div class="flex-1 flex flex-col items-center justify-end md:flex-row space-y-2 md:space-y-0 md:space-x-4">
+                <a class="font-semibold text-lg text-gray-800 hover:text-primary" href="#">описание</a>
+                <a class="font-semibold text-lg text-gray-800 hover:text-primary" href="#">цены</a>
+                <a class="font-semibold text-lg text-gray-800 hover:text-primary" href="#">контакты</a>
+                <!-- <a class="font-semibold text-lg px-3 py-1 text-white rounded bg-pink-800 hover:bg-pink-900"
+                    href="#">скачать</a> -->
+                <a class="font-semibold text-lg px-3 py-1 text-white rounded bg-primary hover:bg-primary-dark active:bg-primary-light"
+                    href="#">скачать</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- headers -->
+
+    <div class="container mx-auto text-center my-10">
+        <h1 class="text-4xl text-gray-700 font-bold my-10">Самый навороченный шаблонизатор юридических документов</h1>
+        <h2 class="text-xl text-gray-800 font-semibold my-10">Лед тронулся, господа присяжные-заседатели, командовать
+            парадом буду я</h2>
+        <div
+            class="my-5 flex flex-col items-center justify-center justify-items-center md:flex-row space-y-2 md:space-y-0 md:space-x-10">
+            <a class="px-3 py-1 font-semibold text-lg rounded border border-primary text-primary hover:bg-pink-100 active:bg-primary-light active:text-white"
+                href="#">попробовать бесплатно</a>
+            <a class="px-3 py-1 font-semibold text-lg rounded border border-primary text-white bg-primary-light hover:bg-primary-dark active:bg-primary-light"
+                href="#">уже беру, дайте два!</a>
+        </div>
+    </div>
+
+    <!--hero-->
+
+    <div class="relative bg-primary">
+        <div class="absolute top-0 left-0 right-0">
+            <svg class="w-full" viewBox="0 0 622 85" fill="none">
+                <path d="M0 85V0H622L0 85Z" fill="white" />
+            </svg>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0">
+            <svg class="w-full" viewBox="0 0 616 85" fill="none">
+                <path d="M622 0V85H0L622 0Z" fill="white" />
+            </svg>
+        </div>
+        <div class="container mx-auto text-center p-5 relative">
+            <div class="rounded shadow-lg overflow-hidden">
+                <img class="" src="images/ScreenShot.png" />
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- <div class="">
+        <svg class="w-full" viewBox="0 0 616 85" fill="none">
+            <path d="M622 0V85H0L622 0Z" fill="#7E0072" />
+        </svg>
+    </div>
+    <div style="background-color: #7E0072;">
+      <div class="container mx-auto text-center p-5">
+        <div class="rounded-md shadow-lg overflow-hidden">
+          <img class="" src="images/ScreenShot.png"/>
+        </div>
+      </div>
+    </div>
+    <div class="">
+        <svg class="w-full" viewBox="0 0 622 85" fill="none">
+            <path d="M0 85V0H622L0 85Z" fill="#7E0072" />
+        </svg>
+    </div>
+
+     -->
+
+
+
+    <!--features-->
+
+    <h2 class="text-3xl text-center text-gray-800 font-semibold my-16">Что умеет Комбинатор?</h2>
+
+    <div class="container mx-auto my-10 flex flex-col items-start justify-items-stretch justify-between lg:flex-row space-y-10 lg:space-y-0 lg:space-x-10">
+
+        <div class="relative flex-1 p-5 pt-8 pl-16 transform rotate-2 border border-gray-200 bg-green-50 shadow-md">
+            <svg class="absolute text-blue-800" style="top: -17px; left :20px;" width="38" height="92"
+                viewBox="0 0 38 92" fill="none" stroke="currentColor">
+                <path
+                    d="M35 17.0448C35 -1.47625 3.55954 -1.6787 3.55957 17.0448C3.5596 35.7684 3.55961 65.031 3.55957 78.9216C3.55953 92.8122 27.3668 92.3913 27.3668 78.9216C27.3668 65.452 27.3668 38.9333 27.3668 26.3053C27.3668 13.6773 11.5915 13.2563 11.5915 26.3053C11.5915 39.3543 11.5915 72.2995 11.5915 72.2995"
+                    stroke-width="5.48037" />
+            </svg>
+
+            <h3 class="font-semibold text-lg  mb-3">Превращает типовые документы в шаблоны</h3>
+            <p>Шаблон документа в Комбинаторе - это не просто подстановка тестовых полей. Комбинатор умеет выбирать один
+                из вариантов текста по условию, делать произвольные вычисления,
+                выделять повторяющуюся в нескольких документах логику в общий “фрагмент” и много другое.
+            </p>
+            <div class="mt-4 text-right">
+                <a class="hover:text-primary hover:underline" href="#">Узнать больше...</a>
+            </div>
+        </div>
+
+        <div class="relative flex-1 p-5 pt-8 pl-16 transform -rotate-2 border border-gray-200 bg-yellow-50 shadow-md ">
+            <svg class="absolute text-red-800" style="top: -17px; left :20px;" width="38" height="92"
+                viewBox="0 0 38 92" fill="none" stroke="currentColor">
+                <path
+                    d="M35 17.0448C35 -1.47625 3.55954 -1.6787 3.55957 17.0448C3.5596 35.7684 3.55961 65.031 3.55957 78.9216C3.55953 92.8122 27.3668 92.3913 27.3668 78.9216C27.3668 65.452 27.3668 38.9333 27.3668 26.3053C27.3668 13.6773 11.5915 13.2563 11.5915 26.3053C11.5915 39.3543 11.5915 72.2995 11.5915 72.2995"
+                    stroke-width="5.48037" />
+            </svg>
+
+            <h3 class="font-semibold text-lg mb-3">Предотвращает механические ошибки</h3>
+            <p>Аккуратно подготовленный шаблон практически исключает “глупые” ошибки при наборе. Вы заполняете форму с
+                данными, а Комбинатор на их основе выберет нужные фрагменты текста, вставит в них информацию в нужной
+                форме, правильно отформатирует с учетом склонений и спряжений.
+            </p>
+            <div class="mt-4 text-right">
+                <a class="hover:text-primary hover:underline" href="#">Узнать больше...</a>
+            </div>
+        </div>
+
+        <div class="relative flex-1 p-5 pt-8 pl-16 transform rotate-1 border border-gray-200 bg-blue-50 shadow-md ">
+            <svg class="absolute text-green-800" style="top: -17px; left :20px;" width="38" height="92"
+                viewBox="0 0 38 92" fill="none" stroke="currentColor">
+                <path
+                    d="M35 17.0448C35 -1.47625 3.55954 -1.6787 3.55957 17.0448C3.5596 35.7684 3.55961 65.031 3.55957 78.9216C3.55953 92.8122 27.3668 92.3913 27.3668 78.9216C27.3668 65.452 27.3668 38.9333 27.3668 26.3053C27.3668 13.6773 11.5915 13.2563 11.5915 26.3053C11.5915 39.3543 11.5915 72.2995 11.5915 72.2995"
+                    stroke-width="5.48037" />
+            </svg>
+
+            <h3 class="font-semibold text-lg  mb-3">Экономит время</h3>
+            <p>Благодаря набору встроенных функций для анализа морфологии и форматирования, Комбинатор позволяет
+                поставить ФИО в нужном склонении, согласовать
+                окончания слов в предложении, вывести суммы и даты прописью. Вам больше не придется тратить время на
+                рутину.
+            </p>
+            <div class="mt-4 text-right">
+                <a class="hover:text-primary hover:underline" href="#">Узнать больше...</a>
+            </div>
+        </div>
+
+    </div>
+
+    <h2 class="text-3xl text-center text-gray-800 font-semibold my-16">Для кого этот продукт?</h2>
+
+    <div class="container mx-auto text-lg leading-10 text-justify" style="text-indent: 20px;">
+        <img class="float-left w-full md:w-1/3 m-3" src="images/businesswoman.svg" />
+        <p>
+            Это Оля. Оля менеджер по работе с vip-клиентами в КРУПНОМ банке. У Оли сегодня плохой день. Как всегда, Оля
+            подготовила пакет документов, скопировав текст из файлов другого клиента. Оля очень аккуратная, по несколько
+            раз проверяет тексты и никогда не ошибается, но сегодня клиент очень спешил и документы надо было
+            подготовить очень быстро. Оля изменила фамилию клиента, и сумму, и дату, и паспортные данные, и реквизиты
+            счета, и еще раз дату и сумму. И еще раз дату. И еще раз фамилию. Фамилия повторялась в тексте много раз и
+            Оля конечно же исправила все вхождения … ну, кроме одного.
+        </p>
+        <p>
+            К сожалению, ошибка обнаружилась только на следующий день, после отправки документов партнерской
+            организации. Теперь Оле предстоит несколько неприятных разговоров: с клиентом, с партнерами и с начальником.
+            Удастся Оле исправить документы с задним числом или сделка будет сорвана?
+            Не будь как Оля. <a href="#" class="hover:text-primary hover:underline">Создай шаблоны для своих документов в «Комбинатор Про» уже сегодня!</a>
+        </p>
+        <br class="clear-both mb-10" />
+        <p>
+            <img class="float-right w-full md:w-1/3 m-3" src="images/businessman.svg" />
+            Это Петя. Петя высококлассный юрист. Петя закончил юридический с красным дипломом, получил вторую вышку по
+            экономике и защитил диссертацию. У него 15 лет практики и теперь он начальник юридического отдела БОЛЬШОГО
+            завода. Половину своего рабочего времени, Петя занимается тупой вычиткой типовых договоров. Менеджеры отдела
+            продаж завода составляют договора в простом редакторе текста, обычно беря за образец предыдущий договор. Все
+            возможные варианты договора давно проработаны юридическим отделом, однако Пете все равно приходиться
+            вчитываться в каждую букву. Ведь сотрудник может внести любые исправления в текст документа, например,
+            немного изменив условия по просьбе клиента. А даже небольшая неточность может обойтись заводу в миллионы
+            рублей.
+            Поужинает сегодня Петя с семьёй или будет допоздна разбирать накопившуюся рутину?
+            Не будь как Петя. <a href="#" class="hover:text-primary hover:underline">Используй «Комбинатор Про» для автоматизации работы клиентского отдела или команды
+            юристов.</a>
+        </p>
+        <br class="clear-both mb-14" />
+        <p>
+            <img class="float-left w-full md:w-1/3 m-3" src="images/multitasking.svg" />
+            Это Света. Света владелица небольшой адвокатской конторы, где работают настоящие профессионалы.
+            Профессионализм стоит дорого и, несмотря на маленький штат, зарплатный фонд ежемесячно составляет
+            внушительную сумму. Чтобы хватало денег и на зарплату, и на расходы и оставалась прибыль, Свете необходимо
+            расширять клиентскую базу. Но как это сделать, если все сотрудники заняты по полной? Ведь, как минимум треть
+            времени они вынуждены заниматься примитивным заполнением документов.
+            Не будь как Света.  <a href="#" class="hover:text-primary hover:underline">Увеличь производительность работы юристов с помощью «Комбинатор Про».</a>
+        </p>
+        <br class="clear-both  mb-14" />
+        <p>
+            <img class="float-right w-full md:w-1/3 m-3" src="images/cat.svg" />
+            Нет мы не забыли про Васю! Это Вася. Вася любимый кот программиста Виталия, занятого разработкой системы
+            быстрого создания системы документов «Комбинатор Про». Каждый раз когда типовой договор заполняют с ошибкой
+            Василий грустит, жалобно мурлычет и отказывается лакать молоко.
+            Помоги Васе, не дай котику загрустить. <a href="#" class="hover:text-primary hover:underline">Скачай бесплатную пробную версию «Комбинатор Про» прямо сейчас.</a>
+        </p>
+        <br class="clear-both  mb-1" />
+    </div>
+
+    <div>
+    <svg class="w-full h-12 text-primary" viewBox="0 0 1124 155" fill="currentColor" preserveAspectRatio="none">
+        <path d="M0 155H1257C746.063 -49.8418 473.882 -53.4836 0 155Z"/>
+    </svg>
+    </div>
+    <div class="relative bg-primary text-white">
+        <div class=" container mx-auto py-10 flex items-center flex-col">
+            <h2 class="text-3xl text-center font-semibold my-16">Как это работает?</h2>
+
+            <iframe class="" width="560" height="315" src="https://www.youtube.com/embed/rhxWIkiecOA" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+
+            <!-- <h2 class="text-3xl text-center text-gray-800 font-semibold my-16">Кто мы?</h2>
+            <div class="md:flex">
+                <div class="flex-1">
+                    <p class="pb-6 text-gray-100 text-lg md:text-xl leading-normal md:leading-normal">
+                        Компания Perpetuum Software занимается разработкой коробочных продуктов для построения отчетов и
+                        визуализации данных с 2002 г,
+                        среди наших клиентов Siemens, Intel, NASA, Sony, Олимпийский комитет, Hewlett Packard, и многие
+                        другие
+                        компании из более чем 100 стран.</p>
+                </div>
+                <div class="rounded-md overflow-hidden flex-1"><img src="images/company.jpg" alt="Personalization"
+                        loading="lazy"></div>
+            </div> -->
+        </div>
+    </div>
+    <div class="w-full bg-line mb-10" style="height: 16px;"></div>
+
+    <div class="container mx-auto">
+
+        <h2 class="text-3xl text-center text-gray-800 font-semibold my-5">Что включено?</h2>
+
+        <div class="mx-auto lg:flex items-center px-6 pt-20">
+            <div class="lg:flex-1">
+                <h2 class="pb-4 text-2xl lg:text-4xl font-bold text-gray-900 lg:leading-15">
+                    Pедактор шаблонов</h2>
+                <p class="pb-6 text-gray-600 text-lg lg:text-xl leading-normal lg:leading-normal">
+                    Визуальный редактор позволяет создавать шаблоны документов в привычном окружении, максимально похожем на редактор
+                    Microsoft Word.
+                    Формат текста шаблона также полностью совместим с форматом Word, что позволяет быстро создать шаблон
+                    на основе любого
+                    существующего текста, с сохранием всех особенностей форматирования оригинала.</p>
+            </div>
+            <div class="relative flex lg:flex-1 mt-8 lg:ml-10">
+                <div class="absolute inset-0 bg-primary-light rounded-lg transform rotate-3 origin-bottom-right"></div>
+                <div class="rounded-lg shadow z-10">
+                    <div class="bg-white rounded-lg p-3 lg:p-6 shadow-lg">
+                        <div class="rounded-md overflow-hidden"><img src="images/ScreenShot2.png" width="1237"
+                                height="1095" alt="Personalization" loading="lazy"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mx-auto lg:flex lg:flex-row-reverse items-center px-6 pt-20">
+            <div class="lg:flex-1">
+                <h2 class="pb-4 text-2xl lg:text-4xl font-bold text-gray-900 lg:leading-15">
+                    Среда заполнения</h2>
+                <p class="pb-6 text-gray-600 text-lg lg:text-xl leading-normal lg:leading-normal">
+                    Просто заполните данные в панеле слева и дайте Комбинатору сделать все остальное за вас.</p>
+            </div>
+            <div class="relative flex lg:flex-1 mt-8 lg:mr-10">
+                <div class="absolute inset-0 bg-primary-light rounded-lg transform -rotate-3 origin-bottom-left"></div>
+                <div class="rounded-lg shadow z-10">
+                    <div class="bg-white rounded-lg p-3 lg:p-6 shadow-lg">
+                        <div class="rounded-md overflow-hidden"><img src="images/ScreenShot1.png" width="1237"
+                                height="1095" alt="Personalization" loading="lazy"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mx-auto lg:flex items-center px-6 pt-20">
+            <div class="lg:flex-1">
+                <h2 class="pb-4 text-2xl lg:text-4xl font-bold text-gray-900 lg:leading-15">
+                    Cправочник контрагентов </h2>
+                <p class="pb-6 text-gray-600 text-lg lg:text-xl leading-normal lg:leading-normal">
+                    Спавочник конрагентов позволяет хранить всю информацию о физических и юридических лицах, необходимую в документах.
+                </p>
+            </div>
+            <div class="relative flex lg:flex-1 mt-8 lg:ml-10">
+                <div class="absolute inset-0 bg-primary-light rounded-lg transform rotate-3 origin-bottom-right"></div>
+                <div class="rounded-lg shadow z-10">
+                    <div class="bg-white rounded-lg p-3 lg:p-6 shadow-lg">
+                        <div class="rounded-md overflow-hidden"><img src="images/ScreenShot3.png" width="1237"
+                                height="1095" alt="Personalization" loading="lazy"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="mx-auto md:flex items-center px-6 pt-20">
+            <div class="md:w-1/2 md:pr-24 pb-8">
+                <h2 class="pb-4 text-3xl md:text-5xl font-bold text-gray-900 tracking-snug leading-tight md:leading-15">
+                    Визуальный редактор шаблонов</h2>
+                <p class="pb-6 text-gray-600 text-lg md:text-xl leading-normal md:leading-normal">
+                    Позволяет создавать шаблоны докуентов в привычном окружении, максимально похожем на редактор
+                    Microsoft Word.
+                    Формат текста шаблона также полностью совместим с форматом Word, что позволяет быстро создать шаблон
+                    на основе любого
+                    существующего текста, с сохранием всех особенностей форматирования оригинала.</p>
+            </div>
+            <div class="relative flex md:w-1/2">
+                <div class="absolute inset-0 bg-primary-light rounded-lg transform rotate-3 origin-bottom-right"></div>
+                <div class="rounded-lg shadow z-10">
+                    <div class="bg-white rounded-lg p-3 md:p-6 shadow-lg">
+                        <div class="rounded-md overflow-hidden"><img src="images/ScreenShot.png" width="1237"
+                                height="1095" alt="Personalization" loading="lazy"></div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- визуальный редактор шаблонов
+        среда заполнения документов
+        справочник контрагентов (физических и юридических лиц) -->
+
+        <h2 class="text-3xl text-center text-gray-800 font-semibold my-16">Что говорят пользователи?</h2>
+
+        <div class="container mx-auto my-10 flex flex-col items-start justify-items-stretch justify-between lg:flex-row space-y-10 lg:space-y-0 lg:space-x-10">
+            <div class="flex flex-col items-center flex-1 bg-gray-50 shadow-md rounded">
+                <div class="h-2 w-full bg-primary-light rounded-t"></div>
+                <div class="text-center m-6">
+                <img src="images/customer1.jpg" width="400" height="400" class="block mx-auto w-24 h-24 rounded-full" alt="Fabrizio"
+                    loading="lazy">
+                <p class="flex-grow py-6 text-gray-500">“Благодаря Комбинатору ... .... .... ... ... ... .... .... ... ...... .... .... ... ...... .... .... ... ... .”</p>
+                <div class="text-gray-700 font-medium">Елена Петрова</div>
+                <div class="text-lg text-gray-500">Юрист компании ООО "Рога и Копыта"</div>
+                </div>
+            </div>
+            <div class="flex flex-col items-center flex-1 bg-gray-50 shadow-md rounded">
+                <div class="h-2 w-full bg-primary-light rounded-t"></div>
+                <div class="text-center m-6">
+                <img src="images/customer1.jpg" width="400" height="400" class="block mx-auto w-24 h-24 rounded-full" alt="Fabrizio"
+                    loading="lazy">
+                <p class="flex-grow py-6 text-gray-500">“Благодаря Комбинатору ... .... .... ... ... ... .... .... ... ...... .... .... ... ...... .... .... ... ... .”</p>
+                <div class="text-gray-700 font-medium">Елена Петрова</div>
+                <div class="text-lg text-gray-500">Юрист компании ООО "Рога и Копыта"</div>
+                </div>
+            </div>
+            <div class="flex flex-col items-center flex-1 bg-gray-50 shadow-md rounded">
+                <div class="h-2 w-full bg-primary-light rounded-t"></div>
+                <div class="text-center m-6">
+                <img src="images/customer1.jpg" width="400" height="400" class="block mx-auto w-24 h-24 rounded-full" alt="Fabrizio"
+                    loading="lazy">
+                <p class="flex-grow py-6 text-gray-500">“Благодаря Комбинатору ... .... .... ... ... ... .... .... ... ...... .... .... ... ...... .... .... ... ... .”</p>
+                <div class="text-gray-700 font-medium">Елена Петрова</div>
+                <div class="text-lg text-gray-500">Юрист компании ООО "Рога и Копыта"</div>
+                </div>
+            </div>
+    
+        </div>
+
+        
+
+
+        <h2 class="text-3xl text-center text-gray-800 font-semibold my-16">Как попробовать?</h2>
+
+        <form class="mt-8 space-y-6 text-center flex justify-center" action="#" method="POST">
+            <div class="max-w-lg rounded-md shadow-sm -space-x-px flex items-stretch">
+                <div class="flex-1">
+                    <label for="email-address" class="sr-only">Email address</label>
+                    <input id="email-address" name="email" type="email" autocomplete="email" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-l-md focus:outline-none focus:ring-primary focus:border-primary focus:z-10 sm:text-sm" placeholder="ivanov@yandex.ru">
+                  </div>
+                  <button type="submit" class="py-2 px-4 border border-transparent text-sm font-medium rounded-r-md text-white bg-primary hover:bg-primary-dark active:bg-primary-light">
+                    Оставить заявку
+                  </button>
+            </div>
+        </form>    
+
+<!--
+
+    <form class="mt-8 space-y-6" action="#" method="POST">
+      <input type="hidden" name="remember" value="true">
+      <div class="rounded-md shadow-sm -space-y-px">
+        <div>
+          <label for="email-address" class="sr-only">Email address</label>
+          <input id="email-address" name="email" type="email" autocomplete="email" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Email address">
+        </div>
+        <div>
+          <label for="password" class="sr-only">Password</label>
+          <input id="password" name="password" type="password" autocomplete="current-password" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Password">
+        </div>
+      </div>
+-->
+
+        <h2 class="text-3xl text-center text-gray-800 font-semibold my-16">Сколько стоит?</h2>
+
+        <p> TODO: табличка с ценами </p>
+
+        <!-- <h2 class="text-3xl text-center text-gray-800 font-semibold my-16">Как с нами связаться?</h2> -->
+
+        <h2 class="text-3xl text-center text-gray-800 font-semibold my-16">Кто мы?</h2>
+
+
+        <div class="md: flex">
+            <div class="flex-1">
+                <p class="pb-6 text-gray-600 text-lg md:text-xl leading-normal md:leading-normal">
+                    Компания Perpetuum Software занимается разработкой коробочных продуктов для построения отчетов и
+                    визуализации данных с 2002 г,
+                    среди наших клиентов Siemens, Intel, NASA, Sony, Олимпийский комитет, Hewlett Packard, и многие другие
+                    компании из более чем 100 стран.</p>
+            </div>
+            <div class="rounded-md overflow-hidden flex-1"><img src="images/company.jpg"
+                    alt="Personalization" loading="lazy"></div>
+        </div>
+
+
+
+
+        <!-- <div class=" text-center text-sm text-gray-600 flex flex-col items-start md:flex-row">
+
+            <div class="flex-1">
+                <div class="">ПОМОЩЬ</div>
+                <div><a class="" href="#">Руководство пользователя</a></div>
+                <div><a class="" href="#">Поддержка</a></div>
+                <div><a class="" href="#">Форум</a></div>
+                <div><a class="" href="#">Вебинары</a></div>
+                <div><a class="" href="#">Обучение</a></div>
+                <div><a class="" href="#">Обновления</a></div>    
+            </div>
+            <div class="flex-1">
+                <div class="">О КОМПАНИИ</div>
+                <div><a class="" href="#">Блог</a></div>
+                <div><a class="" href="#">О нас</a></div>
+                <div><a class="" href="#">Контакты</a></div>
+                <div><a class="" href="#">Сертификаты</a></div>
+                <div><a class="" href="#">Стать партнером</a></div>
+                <div><a class="" href="#">Акции</a></div>    
+            </div>
+            <div class="flex-1">
+                <div class="">8 (800) 707 3503</div>
+                <div class="">8 (385) 222 3128</div>
+                <div>sales@notariatsoft.ru</div>
+                <div>г. Барнаул, Калинина проспект, 116/44</div>
+                <div>403 офис; 4 этаж</div>
+            </div>
+        </div>
+
+    </div> -->
+
+    </div>
+
+    <div class="bg-gray-200">
+        <div class="mx-auto container">
+        <div class=" text-left text-sm text-gray-600 flex flex-col items-start md:flex-row my-6 py-6">
+
+            <div class="flex-1">
+                <div class="m-1 font-semibold">ПОМОЩЬ</div>
+                <div><a class="m-1 my-2 hover:text-primary hover:underline" href="#">Руководство пользователя</a></div>
+                <div><a class="m-1 my-2 hover:text-primary hover:underline" href="#">Поддержка</a></div>
+                <div><a class="m-1 my-2 hover:text-primary hover:underline" href="#">Форум</a></div>
+                <div><a class="m-1 my-2 hover:text-primary hover:underline" href="#">Вебинары</a></div>
+                <div><a class="m-1 my-2 hover:text-primary hover:underline" href="#">Обучение</a></div>
+                <div><a class="m-1 my-2 hover:text-primary hover:underline" href="#">Обновления</a></div>    
+            </div>
+            <div class="flex-1">
+                <div class="m-1 font-semibold">О КОМПАНИИ</div>
+                <div><a class="m-1 my-2 hover:text-primary hover:underline" href="#">Блог</a></div>
+                <div><a class="m-1 my-2 hover:text-primary hover:underline" href="#">О нас</a></div>
+                <div><a class="m-1 my-2 hover:text-primary hover:underline" href="#">Контакты</a></div>
+                <div><a class="m-1 my-2 hover:text-primary hover:underline" href="#">Сертификаты</a></div>
+                <div><a class="m-1 my-2 hover:text-primary hover:underline" href="#">Стать партнером</a></div>
+                <div><a class="m-1 my-2 hover:text-primary hover:underline" href="#">Акции</a></div>    
+            </div>
+            <div class="flex-1">
+                <div class="m-1 my-2 font-semibold text-lg">8 (800) 707 3503</div>
+                <div class="m-1 my-2 font-semibold text-lg">8 (385) 222 3128</div>
+                <div><a class="m-1 my-2 hover:text-primary hover:underline" href="#">sales@kombinator.pro</a></div>
+                <div class="m-1 my-2">г. Барнаул, Калинина проспект, 116/44</div>
+                <div class="m-1 my-2">403 офис; 4 этаж</div>
+            </div>
+        </div>
+        </div>
+
+    <div class=" text-center text-sm text-gray-600 mt-12">
+        © 2021 Perpetuum Software.
+        <a class="mx-1 hover:text-primary hover:underline" href="#">Соглашение об использовании</a>
+        <!-- <a class="mx-1 hover:text-primary hover:underline" href="#">Связаться с нами</a> -->
+    </div>
+
+    <div class="flex justify-end">
+        <svg class="w-1/3 " viewBox="0 0 616 85" fill="none">
+            <path d="M622 0V85H0L622 0Z" fill="#7E0072" />
+        </svg>
+    </div>
+    </div>
+
+</body>
+
+</html>
