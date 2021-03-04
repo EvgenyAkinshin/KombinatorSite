@@ -21,14 +21,20 @@
 </head>
 
 <body>
-    <!--top triangle-->
+    <!--top line-->
     <div class="relative mb-10 md:mb-0">
+        <!--top triangle-->
         <svg class="w-1/3" viewBox="0 0 622 85" fill="none">
             <path d="M0 85V0H622L0 85Z" fill="#7E0072" />
         </svg>
-        <div class="absolute top-0 right-0 text-right mr-4 md:mt-4 md:flex md:space-x-3">
-            <div class="font-semibold text-sm md:text-base ">8 (800) 707 3503</div>
-            <div><a class="text-sm md:text-base hover:text-primary hover:underline" href="#">sales@kombinator.pro</a></div>
+
+        <!--phone and e-mail -->
+
+        <div class="absolute top-0 right-0 text-right mr-4 mt-4 md:flex md:space-x-3">
+            <div><a class="text-gray-800 font-semibold text-sm md:text-base hover:text-primary hover:underline"
+                    href="tel:8-800-707-35-03">8 (800) 707 3503</a></div>
+            <div><a class="text-gray-700 text-sm md:text-base hover:text-primary hover:underline"
+                    href="#">sales@kombinator.pro</a></div>
         </div>
     </div>
 
@@ -241,21 +247,25 @@
         <br class="clear-both  mb-1" />
     </div>
 
+    <!--video section -->
+
     <div>
-        <svg class="w-full h-12 text-primary" viewBox="0 0 1124 155" fill="currentColor" preserveAspectRatio="none" style="margin-bottom: -1px;">
+        <svg class="w-full h-12 text-primary" viewBox="0 0 1124 155" fill="currentColor" preserveAspectRatio="none"
+            style="margin-bottom: -1px;">
             <path d="M0 155H1257C746.063 -49.8418 473.882 -53.4836 0 155Z" />
         </svg>
     </div>
+
     <div class="relative bg-primary text-white">
         <div class=" container mx-auto py-10 flex items-center flex-col">
             <h2 class="text-3xl text-center font-semibold my-16">Как это работает?</h2>
 
             <svg class="w-1/2" viewBox="0 0 747 508" fill="none">
-                <rect width="746.369" height="507.312" rx="36" fill="#C4C4C4"/>
-                <circle cx="373" cy="242" r="66" fill="#504F77"/>
-                <path d="M417 242L351 280.105L351 203.895L417 242Z" fill="#98ECFF"/>
+                <rect width="746.369" height="507.312" rx="36" fill="#C4C4C4" />
+                <circle cx="373" cy="242" r="66" fill="#504F77" />
+                <path d="M417 242L351 280.105L351 203.895L417 242Z" fill="#98ECFF" />
             </svg>
-                
+
 
             <!-- <iframe class="" width="560" height="315" src="https://www.youtube.com/embed/rhxWIkiecOA" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -263,13 +273,15 @@
 
         </div>
     </div>
+
     <div class="w-full bg-line mb-10" style="height: 16px;"></div>
 
+    <!--section -->
+
+    <h2 class="text-3xl text-center text-gray-800 font-semibold my-16">Что включено?</h2>
+
     <div class="container mx-auto">
-
-        <h2 class="text-3xl text-center text-gray-800 font-semibold my-5">Что включено?</h2>
-
-        <div class="mx-auto lg:flex items-center px-6 pt-20">
+        <div class="mx-auto lg:flex items-center px-6 md:pt-4">
             <div class="lg:flex-1">
                 <h2 class="pb-4 text-2xl lg:text-4xl font-bold text-gray-900 lg:leading-15">
                     Pедактор шаблонов</h2>
@@ -331,11 +343,13 @@
         </div>
 
 
+    </div>
 
 
 
+    <h2 class="text-3xl text-center text-gray-800 font-semibold my-16">Как попробовать?</h2>
 
-        <h2 class="text-3xl text-center text-gray-800 font-semibold my-16">Как попробовать?</h2>
+    <div class="container mx-auto">
 
         <form class="mt-8 space-y-6 text-center flex justify-center" action="#" method="POST">
             <div class="max-w-lg rounded-md shadow-sm -space-x-px flex items-stretch">
@@ -351,9 +365,11 @@
                 </button>
             </div>
         </form>
+    </div>
 
-        <h2 class="text-3xl text-center text-gray-800 font-semibold my-16">Сколько стоит?</h2>
+    <h2 class="text-3xl text-center text-gray-800 font-semibold my-16">Сколько стоит?</h2>
 
+    <div class="container mx-auto">
         <div
             class="my-10 flex flex-col items-center justify-items-stretch justify-between lg:flex-row space-y-10 lg:space-y-0 lg:space-x-10">
             <div class="flex flex-col items-center flex-1 bg-gray-50 shadow-md rounded">
@@ -416,6 +432,7 @@
         </div>
 
         <h2 class="text-3xl text-center text-gray-800 font-semibold my-16">Кто мы?</h2>
+
         <div class="md: flex">
             <div class="flex-1">
                 <p class="pb-6 text-gray-600 text-lg md:text-xl leading-normal md:leading-normal">
@@ -428,9 +445,12 @@
             <div class="rounded-md overflow-hidden flex-1"><img src="images/company.jpg" alt="Perpetuum Software"
                     loading="lazy"></div>
         </div>
+</div>
 
         <h2 class="text-3xl text-center text-gray-800 font-semibold my-16">Что говорят пользователи?</h2>
 
+
+        <div class="container mx-auto">
         <div
             class="container mx-auto my-10 flex flex-col items-start justify-items-stretch justify-between lg:flex-row space-y-10 lg:space-y-0 lg:space-x-10">
             <div class="flex flex-col items-center flex-1 bg-gray-50 shadow-md rounded">
@@ -445,7 +465,7 @@
             </div>
             <div class="flex flex-col items-center flex-1 bg-gray-50 shadow-md rounded">
                 <div class="h-2 w-full bg-primary-light rounded-t"></div>
-                <div class="text-center m-6"> 
+                <div class="text-center m-6">
                     <img src="images/customer1.jpg" width="400" height="400"
                         class="block mx-auto w-24 h-24 rounded-full" alt="Fabrizio" loading="lazy">
                     <p class="flex-grow py-6 text-gray-500">“Благодаря Комбинатору ... .... .... ... ... ... .... ....
@@ -501,7 +521,7 @@
                 </div>
             </div>
         </div>
-    
+
 
         <div class=" text-center text-sm text-gray-600 mt-12">
             © 2021 Perpetuum Software.
@@ -514,7 +534,7 @@
                 <path d="M1848 0V85H1232L1848 0Z" fill="#7E0072" />
             </svg>
         </div>
-            
+
 
 
         <!-- <div class="flex justify-end">
