@@ -1,5 +1,9 @@
 module.exports = {
-  purge: [],
+  purge: {
+    enabled: true,
+    content: ['./**/*.html', './**/*.shtml'],
+  },
+  // purge : ['./src/**/*.html', './src/**/*.shtml'],
   darkMode: false, // or 'media' or 'class'
   theme: {
     container: {
@@ -27,5 +31,7 @@ module.exports = {
       textColor: ['active'],
     }
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }
