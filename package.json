@@ -1,7 +1,8 @@
 {
   "scripts": {
     "tail-create": "npx tailwindcss build styles.css -o tailwind.css",
-    "tail-min": "npx postcss styles.css -o tailwind.min.css"
+    "tail-min": "npx postcss styles.css -o tailwind.min.css",
+    "tail-min2": "npx postcss styles.css -o 'C:/Work/Lab/Kombinator Generator/Kombinator_Site/wwwroot/css/tailwind.min.css'"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.4.0",
