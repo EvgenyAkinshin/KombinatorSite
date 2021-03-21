@@ -1,7 +1,7 @@
 module.exports = {
   purge: {
     enabled: true,
-    content: ['./**/*.html', './**/*.shtml'],
+    content: ['./**/*.html', './**/*.shtml', 'C:/Work/Lab/Kombinator_Generator/Kombinator_Site/**/*.html', 'C:/Work/Lab/Kombinator_Generator/Kombinator_Site/**/*.shtml'],
   },
   // purge : ['./src/**/*.html', './src/**/*.shtml'],
   darkMode: false, // or 'media' or 'class'
