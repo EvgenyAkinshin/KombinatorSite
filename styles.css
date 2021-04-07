@@ -12,3 +12,9 @@
 {
     text-indent: 20px;
 }
+
+.logo .logo_animated_part { transition: 400ms; stroke-dasharray: 611.621 611.621; stroke-dashoffset: 611.621; }
+.logo:hover .logo_animated_part { stroke-dashoffset: 0; }
+.logo .logo_animated_part_2     { transition: 600ms ; }
+.logo .logo_animated_part_3     { transition: 800ms ; }
+.logo .logo_animated_part_4     { transition: 1000ms ;}
